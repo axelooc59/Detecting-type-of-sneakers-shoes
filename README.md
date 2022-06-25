@@ -10,5 +10,8 @@ But for instance, when I show picture to my relatives they cannot differentiate 
   
 Therefore my project aim to tell you what type of shoes it is by giving him  a picture in input.
 
+Here a concrete example :  
+
+
 
 
