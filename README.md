@@ -12,7 +12,7 @@ But for instance, when I show picture to my relatives they cannot differentiate 
   
 Therefore my project aim to tell you what type of shoes it is by giving him  a picture in input.
 
-Here a concrete example :  
+Here a **concrete example** :  
 
 You choose this picture:
 
@@ -20,7 +20,7 @@ You choose this picture:
 
 It will return his types which is *Jordan 1 High*.
 
-My programm will support the following type of shoes:
+My program will support the following type of shoes:
 * Jordan 1 High
 * Jordan 1 Mid
 * Jordan 1 low
@@ -32,7 +32,19 @@ My programm will support the following type of shoes:
 * Dunk low disrupt
 * Dunk high
 
-As a beginner in machine learning and in order to make this project easier the only accepted picture is like the below one. Namely the shoe is oriented to the left and on a white background.
+As a beginner in machine learning and in order to make this project easier the only accepted picture is like the below one.   
+Namely the shoe is oriented to the left and on a white background.
+
+## Step of this project 
+This project have three main step:
+1. Collect data to train our model
+2. Pre process the data collected
+3. Create our model by giving him our data
+
+
+### Collecting data
+In order to collect data we will scrap the website [restocks.net](https://restocks.net)
+
 
 
 
