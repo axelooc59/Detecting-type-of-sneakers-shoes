@@ -2,7 +2,6 @@
 
 Computer vision for detecting type of sneakers shoes (only trained for brand Nike)
 ---
-
 ** Aim of this project : **
 
 As a sneakers addict, it is really easy for me to guess the type of shoes I am looking.
