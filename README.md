@@ -1,6 +1,6 @@
 # Detecting Nike type of sneakers shoes
 
-Computer vision for detecting type of sneakers shoes (only trained for braind Nike)
+Computer vision for detecting type of sneakers shoes (only trained for brand Nike)
 ---
 
 Aim of this project :  
