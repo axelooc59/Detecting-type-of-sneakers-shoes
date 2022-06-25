@@ -14,10 +14,9 @@ Therefore my project aim to tell you what type of shoes it is by giving him  a p
 
 Here a concrete example :  
 
-Reference-style: 
-![alt text][logo]
 
-[logo]: https://github.com/axelooc59/Detecting-type-of-sneakers-shoes/blob/main/mocha.png
+<img src="https://github.com/axelooc59/Detecting-type-of-sneakers-shoes/blob/main/mocha.png" alt="drawing" width="200"/>
+
 
 
 
