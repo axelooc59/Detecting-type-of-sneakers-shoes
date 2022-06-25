@@ -44,6 +44,7 @@ This project have three main step:
 
 ### Collecting data
 In order to collect data we will scrap the website [restocks.net](https://restocks.net), in that way we will get easily labeled data.
+  
 For that we will use the library *requests* of python.
 
 
