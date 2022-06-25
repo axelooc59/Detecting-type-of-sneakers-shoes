@@ -14,8 +14,13 @@ Therefore my project aim to tell you what type of shoes it is by giving him  a p
 
 Here a concrete example :  
 
+You choose this picture:
 
 <img src="https://github.com/axelooc59/Detecting-type-of-sneakers-shoes/blob/main/mocha.png" alt="drawing" width="200"/>
+
+It will return his types which is *Jordan 1 High*.
+
+
 
 
 
