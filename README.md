@@ -42,10 +42,15 @@ This project have three main step:
 3. Create our model by giving him our data
 
 
-### Collecting data
+### 1. Collecting data
 In order to collect data we will scrap sneakers picture of the website [restocks.net](https://restocks.net), in that way we will get easily labeled data.
   
 For that we will use the library *requests* of python and a little of javascript
+
+We sort each picture into their correspondants folder.
+
+See the code in *collecting_data.ipynb*
+
 
 
 
