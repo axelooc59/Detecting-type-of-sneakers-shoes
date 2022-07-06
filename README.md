@@ -32,7 +32,7 @@ My program will support the following type of shoes:
 * Dunk low disrupt
 * Dunk high
 
-As a beginner in machine learning and in order to make this project easier the only accepted picture is like the below one.   
+As a beginner in machine learning and in order to make this project easier and possible the only accepted picture is like the below one.   
 Namely the shoe is oriented to the left and on a white background.
 
 ## Step of this project 
@@ -45,7 +45,7 @@ This project have three main step:
 ### Collecting data
 In order to collect data we will scrap sneakers picture of the website [restocks.net](https://restocks.net), in that way we will get easily labeled data.
   
-For that we will use the library *requests* of python.
+For that we will use the library *requests* of python and a little of javascript
 
 
 
