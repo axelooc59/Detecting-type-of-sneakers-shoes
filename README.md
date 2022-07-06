@@ -1,4 +1,4 @@
-# Detecting Nike type of sneakers shoes
+# Detecting Nike type of sneakers 
 
 Computer vision for detecting type of sneakers shoes (only trained for brand Nike)
 
