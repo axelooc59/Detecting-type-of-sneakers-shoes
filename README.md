@@ -50,7 +50,7 @@ We sort each picture into their correspondants folder.
 
 See the code in *collecting_data.ipynb*
 
-We were able to collect a total of 725 pictures. This is not a lot to train a deep neural network. That's why I had chosen previously to use the same type of sneakers to make this training possible.
+We were able to collect a total of 725 pictures. This is not a lot to train a deep neural network. That's why I had chosen previously to use the same type pattern of sneakers pictures to make this training possible.
 
 
 
