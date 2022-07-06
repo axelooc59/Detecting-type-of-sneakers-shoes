@@ -10,7 +10,7 @@ Computer vision for detecting type of sneakers shoes (only trained for brand Nik
 As a sneakers addict, it is really easy for me to guess the type of shoes I am looking.
 But for instance, when I show picture to my relatives they cannot differentiate dunk with jordan.
   
-Therefore my project aim to tell you what type of shoes it is by giving him a picture in input.
+Therefore my project aim to tell you what type of shoes it is by giving him a picture in input. We would like to have an accuracy of 80 % percentage.
 
 Here a **concrete example** :  
 
@@ -24,7 +24,6 @@ My program will support the following type of shoes:
 * Jordan 1 High
 * Jordan 1 Mid
 * Jordan 1 low
-* Jordan 2
 * Jordan 3
 * Jordan 4
 * Dunk low (classic shape)
@@ -50,6 +49,10 @@ For that we will use the library *requests* of python and a little of javascript
 We sort each picture into their correspondants folder.
 
 See the code in *collecting_data.ipynb*
+
+We were able to collect a total of 725 pictures. This is not a lot to train a deep neural network. That's why I had chosen previously to use the same type of sneakers to make this training possible.
+
+
 
 
 
