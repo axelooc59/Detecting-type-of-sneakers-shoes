@@ -67,8 +67,8 @@ To do so I have used the library keras of **TensorFlow**.
 I managed to hit an accurancy of 82% on the validation set.
 
 Below the result of prediction by my neural network on the validation set :  
-
-
+(In red we have wrong prediction,on the left we have real label and on the right prediction)  
+<img src="https://github.com/axelooc59/Detecting-type-of-sneakers-shoes-by-ML-/blob/master/CV_SNKRS/prediction.png" alt="drawing" />
 
 
 
