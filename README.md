@@ -27,8 +27,6 @@ My program will support the following type of shoes:
 * Jordan 3
 * Jordan 4
 * Dunk low (classic shape)
-* Dunk low disrupt 2
-* Dunk low disrupt
 * Dunk high
 
 As a beginner in machine learning and in order to make this project easier and possible the only accepted picture is like the below one.   
@@ -44,10 +42,16 @@ This project have three main step:
 ### 1. Collecting data
 In order to collect data we will scrap sneakers picture of the website [restocks.net](https://restocks.net), in that way we will get easily labeled data.
   
-For that we will use the library *requests* of python and a little of javascript
+For that we will use the library *requests* of python and a little of javascript to get link of picture.
 
 We sort each picture into their correspondants folder.
 
 See the code in *collecting_data.ipynb*
 
 We were able to collect a total of 725 pictures. This is not a lot to train a deep neural network. That's why I had chosen previously to use the same type pattern of sneakers pictures to make this training possible.
+
+### 2. Preprocessing data
+
+
+
+
