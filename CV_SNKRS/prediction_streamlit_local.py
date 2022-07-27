@@ -47,19 +47,19 @@ from PIL import Image
 
 with st.spinner('Loading...'):
 
-   
+   #pic= st.file_uploader('',type=['png','jpeg'])
    import cv2
-   
+   from tkinter import filedialog as fd
    from tensorflow.keras.models import Model
    from tensorflow import keras
    import matplotlib.pyplot as plt
    #download model in a temp file
    
    model = keras.models.load_model('model_CNN')
-   filename =tabs2.text_input("Full path of the images")
-   tabs2.write(r'Example : C:\Users\axgontie\Desktop\axel_gontier\personnal Github\CV_SNKRS\image.png')
-   if tabs2.button('Upload the picture'):
-      
+   if tabs2.button('Upload a picture'):
+      filename = fd.askopenfilename()
+
+     
       if filename is not None:
          image2 = Image.open(filename)
          tabs2.image(image2,caption="Picture to predict")
