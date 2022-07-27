@@ -68,6 +68,8 @@ with st.spinner('Loading...'):
          
          
          img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
+      else:
+         tabs2.error("Please update the picture to predict")
          
 
          
