@@ -1,5 +1,3 @@
-#py -m streamlit run .\prediction_streamlit.py
-
 import streamlit as st
 import time
 
@@ -30,7 +28,7 @@ urllib.request.urlretrieve(
 image = Image.open('image.png')
 tabs1.image(image,caption="Expected picture format")
 
-pic=None
+
 
 from PIL import Image
 
@@ -46,9 +44,9 @@ with st.spinner('Loading...'):
    
    
    
-   model = keras.models.load_model('model_CNN')
-   #model = keras.models.load_model('CV_SNKRS/model_CNN')
-   #filename =tabs2.text_input("Full path of the images")
+   
+   model = keras.models.load_model('CV_SNKRS/model_CNN')
+   
    filename=tabs2.file_uploader("Upload a picture",type=["png","jpg"])
    if tabs2.button('Predict'):
       
@@ -57,36 +55,24 @@ with st.spinner('Loading...'):
          image2.save("pic_pred.png")
          tabs2.image(image2,caption="Picture to predict")
          import os
-         path=os.getcwd()
-         dir=os.listdir(path)
-         tabs2.write(dir)
-         # image = Image.open(pic)
-         # img_array = np.array(image)
+         
+         
          type= ['Dunk high', 'Dunk low', 'Jordan 1 high', 'Jordan 1 low', 'Jordan 1 mid', 'Jordan 3', 'Jordan 4']
 
          
          ##prediction 
          
 
-         # from PIL import ImageOps
          
-         # size=(200,200)
-         # img=ImageOps.fit(image2,size,Image.ANTIALIAS)
-         
-         # img = np.asarray(img)
-         # st.write(img.shape)
-         # img=np.expand_dims(img,axis=0)
-
-         # st.write(img.shape)
          image_to_predict = cv2.imread("pic_pred.png",cv2.IMREAD_COLOR)
-         st.write(image_to_predict.shape)
+         
          
          img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
-         st.write(img_to_predict.shape)
+         
 
          
          
-         #img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
+         
          
          
          
@@ -94,8 +80,3 @@ with st.spinner('Loading...'):
          res1 = model.predict(img_to_predict)
          res=np.argmax(res1) 
          tabs2.success("Result : "+ type[res])
-
-   
-
-
-
