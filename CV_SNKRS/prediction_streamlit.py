@@ -60,7 +60,7 @@ with st.spinner('Loading...'):
    dir_list = os.listdir(path)
    st.write(dir_list)
    
-   model = keras.models.load_model('model_CNN')
+   model = keras.models.load_model('CV_SNKRS/model_CNN')
    
    filename =tabs2.text_input("Full path of the images")
    tabs2.write(r'Example : C:\Users\axgontie\Desktop\axel_gontier\personnal Github\CV_SNKRS\image.png')
