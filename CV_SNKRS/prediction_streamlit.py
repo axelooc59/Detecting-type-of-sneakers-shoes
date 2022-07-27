@@ -54,39 +54,17 @@ with st.spinner('Loading...'):
          image2 = Image.open(filename)
          image2.save("pic_pred.png")
          tabs2.image(image2,caption="Picture to predict")
-         
-         
-         
+
          type= ['Dunk high', 'Dunk low', 'Jordan 1 high', 'Jordan 1 low', 'Jordan 1 mid', 'Jordan 3', 'Jordan 4']
 
-         
          ##prediction 
-         
 
-         
          image_to_predict = cv2.imread("pic_pred.png",cv2.IMREAD_COLOR)
-         
-         
+   
          img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
-      else:
-         tabs2.error("Please update the picture to predict")
-         
-
-         
-         
-         
-         
-         
-         
-         
-
-         
-         
-         
-         
-         
-         
-         
+   
          res1 = model.predict(img_to_predict)
          res=np.argmax(res1) 
          tabs2.success("Result : "+ type[res])
+      else:
+         tabs2.error("Please update the picture to predict")
