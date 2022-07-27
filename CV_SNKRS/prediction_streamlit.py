@@ -46,8 +46,8 @@ with st.spinner('Loading...'):
    
    
    
-   model = keras.models.load_model('model_CNN')
-   #model = keras.models.load_model('CV_SNKRS/model_CNN')
+   #model = keras.models.load_model('model_CNN')
+   model = keras.models.load_model('CV_SNKRS/model_CNN')
    #filename =tabs2.text_input("Full path of the images")
    filename=tabs2.file_uploader("Upload a picture",type=["png","jpg"])
    if tabs2.button('Predict'):
