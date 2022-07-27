@@ -6,16 +6,7 @@ import time
 import urllib.request
 import numpy as np
 
-# my_bar = st.progress(0)
 
-# for percent_complete in range(100):
-#      time.sleep(0.02)
-#      my_bar.progress(percent_complete + 1)
-
-
-# with st.spinner('Wait for it...'):
-#     time.sleep(5)
-# st.success('Done!')
 tabs1, tabs2 = st.tabs(["Project", "Test it"])
 
 tabs1.title("Nike Sneakers prediction")
@@ -53,22 +44,22 @@ with st.spinner('Loading...'):
    from tensorflow.keras.models import Model
    from tensorflow import keras
    
-   import os
-   path = os.getcwd()
-  
-
-   dir_list = os.listdir(path)
-   st.write(dir_list)
    
-   model = keras.models.load_model('CV_SNKRS/model_CNN')
    
-   filename =tabs2.text_input("Full path of the images")
-   tabs2.write(r'Example : C:\Users\axgontie\Desktop\axel_gontier\personnal Github\CV_SNKRS\image.png')
-   if tabs2.button('Upload the picture'):
+   model = keras.models.load_model('model_CNN')
+   #model = keras.models.load_model('CV_SNKRS/model_CNN')
+   #filename =tabs2.text_input("Full path of the images")
+   filename=tabs2.file_uploader("Upload a picture",type=["png","jpg"])
+   if tabs2.button('Predict'):
       
       if filename is not None:
          image2 = Image.open(filename)
+         image2.save("pic_pred.png")
          tabs2.image(image2,caption="Picture to predict")
+         import os
+         path=os.getcwd()
+         dir=os.listdir(path)
+         tabs2.write(dir)
          # image = Image.open(pic)
          # img_array = np.array(image)
          type= ['Dunk high', 'Dunk low', 'Jordan 1 high', 'Jordan 1 low', 'Jordan 1 mid', 'Jordan 3', 'Jordan 4']
@@ -77,19 +68,29 @@ with st.spinner('Loading...'):
          ##prediction 
          
 
-         #st.write(pic)
+         # from PIL import ImageOps
          
+         # size=(200,200)
+         # img=ImageOps.fit(image2,size,Image.ANTIALIAS)
+         
+         # img = np.asarray(img)
+         # st.write(img.shape)
+         # img=np.expand_dims(img,axis=0)
 
-         image_to_predict = cv2.imread(filename,cv2.IMREAD_COLOR)
-         
+         # st.write(img.shape)
+         image_to_predict = cv2.imread("pic_pred.png",cv2.IMREAD_COLOR)
+         st.write(image_to_predict.shape)
          
          img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
+         st.write(img_to_predict.shape)
+
+         
+         
+         #img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
+         
+         
+         
          
          res1 = model.predict(img_to_predict)
          res=np.argmax(res1) 
          tabs2.success("Result : "+ type[res])
-
-   
-
-
-
