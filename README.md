@@ -2,7 +2,7 @@
 
 Computer vision for detecting type of sneakers shoes (only trained for brand Nike)
 
-
+You can test it [here](https://axelooc59-detecting-type-of-cv-snkrsprediction-streamlit-8lb7kq.streamlitapp.com/#by-computer-vision)
 
 
 **Aim of this project :**
