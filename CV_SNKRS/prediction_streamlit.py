@@ -52,7 +52,7 @@ with st.spinner('Loading...'):
    
    from tensorflow.keras.models import Model
    from tensorflow import keras
-   import matplotlib.pyplot as plt
+   
    #download model in a temp file
    
    model = keras.models.load_model('model_CNN')
