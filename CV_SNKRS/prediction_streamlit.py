@@ -68,6 +68,14 @@ with st.spinner('Loading...'):
          
          
          img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
+         st.write(img_to_predict.shape)
+
+         
+         
+         #img_to_predict = np.expand_dims(cv2.resize(image_to_predict,(200,200)), axis=0)
+         
+         
+         
          
 
          
