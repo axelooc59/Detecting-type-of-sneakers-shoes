@@ -53,9 +53,15 @@ with st.spinner('Loading...'):
    from tensorflow.keras.models import Model
    from tensorflow import keras
    
-   #download model in a temp file
+   import os
+   path = os.getcwd()
+  
+
+   dir_list = os.listdir(path)
+   st.write(dir_list)
    
    model = keras.models.load_model('model_CNN')
+   
    filename =tabs2.text_input("Full path of the images")
    tabs2.write(r'Example : C:\Users\axgontie\Desktop\axel_gontier\personnal Github\CV_SNKRS\image.png')
    if tabs2.button('Upload the picture'):
